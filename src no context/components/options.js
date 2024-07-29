@@ -1,7 +1,4 @@
-import { useQuiz } from "../Context/AppContext";
-
-function Options({ question }) {
-  const { dispatch, answer } = useQuiz();
+function options({ question, dispatch, answer }) {
   const hasAnswered = answer !== null;
   return (
     <div className="options">
@@ -25,4 +22,4 @@ function Options({ question }) {
   );
 }
 
-export default Options;
+export default options;
